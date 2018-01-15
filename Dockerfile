@@ -118,6 +118,7 @@ RUN chmod +x /etc/service/shiny-server/run  \
 #RUN R -e "unlink('highcharter_0.3.0.tar.gz')"
 && R -e "install.packages('shinyBS', repos='https://cran.r-project.org/')" \
 && R -e "install.packages('data.table', repos='https://cran.r-project.org/')" \
+&& R -e "install.packages('geosphere', repos='https://cran.r-project.org/')" \
 && R -e "install.packages('maptools', repos='https://cran.r-project.org/')" \
 && R -e "install.packages('rgdal', repos='https://cran.r-project.org/')" \
 && R -e "install.packages('googleVis', repos='https://cran.r-project.org/')" \
